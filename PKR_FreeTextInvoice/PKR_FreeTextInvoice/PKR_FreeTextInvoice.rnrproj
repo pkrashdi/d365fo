@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PKR_Model</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{8fd53e99-d434-424c-b809-eab0722c1a55}</ProjectGuid>
+    <Name>PKR_FreeTextInvoice</Name>
+    <RootNamespace>PKR_FreeTextInvoice</RootNamespace>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AxClass\FreeTextInvoiceDP_PKR_FreeTextInvoice_Extension">
+      <SubType>Content</SubType>
+      <Name>FreeTextInvoiceDP_PKR_FreeTextInvoice_Extension</Name>
+      <Link>FreeTextInvoiceDP_PKR_FreeTextInvoice_Extension</Link>
+    </Content>
+    <Content Include="AxClass\PrintMgmtDocType_PKR_FreeTextInvoice_Handler">
+      <SubType>Content</SubType>
+      <Name>PrintMgmtDocType_PKR_FreeTextInvoice_Handler</Name>
+      <Link>PrintMgmtDocType_PKR_FreeTextInvoice_Handler</Link>
+    </Content>
+    <Content Include="AxReport\PKR_FreeTextInvoice">
+      <SubType>Content</SubType>
+      <Name>PKR_FreeTextInvoice</Name>
+      <Link>PKR_FreeTextInvoice</Link>
+    </Content>
+    <Content Include="AxTableExtension\FreeTextInvoiceHeaderFooterTmp.PKR_Model">
+      <SubType>Content</SubType>
+      <Name>FreeTextInvoiceHeaderFooterTmp.PKR_Model</Name>
+      <Link>FreeTextInvoiceHeaderFooterTmp.PKR_Model</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PKR_Model</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{be098f71-a20d-49aa-a3f5-4058f9e5a140}</ProjectGuid>
+    <Name>PKR_SalesIntegration</Name>
+    <RootNamespace>PKR_SalesIntegration</RootNamespace>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\PKR_SISalesLineContract">
+      <SubType>Content</SubType>
+      <Name>PKR_SISalesLineContract</Name>
+      <Link>Classes\PKR_SISalesLineContract</Link>
+    </Content>
+    <Content Include="AxClass\PKR_SISalesOrderConfirmedBusinessEvent">
+      <SubType>Content</SubType>
+      <Name>PKR_SISalesOrderConfirmedBusinessEvent</Name>
+      <Link>Classes\PKR_SISalesOrderConfirmedBusinessEvent</Link>
+    </Content>
+    <Content Include="AxClass\PKR_SISalesOrderConfirmedBusinessEventContract">
+      <SubType>Content</SubType>
+      <Name>PKR_SISalesOrderConfirmedBusinessEventContract</Name>
+      <Link>Classes\PKR_SISalesOrderConfirmedBusinessEventContract</Link>
+    </Content>
+    <Content Include="AxClass\PKR_SISalesOrderConfirmedBusinessEventContractInteraction">
+      <SubType>Content</SubType>
+      <Name>PKR_SISalesOrderConfirmedBusinessEventContractInteraction</Name>
+      <Link>Classes\PKR_SISalesOrderConfirmedBusinessEventContractInteraction</Link>
+    </Content>
+    <Content Include="AxClass\SalesConfirmJournalPost_PKR_SalesIntegration_Extension">
+      <SubType>Content</SubType>
+      <Name>SalesConfirmJournalPost_PKR_SalesIntegration_Extension</Name>
+      <Link>Classes\SalesConfirmJournalPost_PKR_SalesIntegration_Extension</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

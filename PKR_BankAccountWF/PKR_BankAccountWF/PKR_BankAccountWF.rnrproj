@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PKR_Model</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{ba879db8-208d-4caf-a1ac-16a0eb9d8133}</ProjectGuid>
+    <Name>PKR_BankAccountWF</Name>
+    <RootNamespace>PKR_BankAccountWF</RootNamespace>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AxClass\BankAccountTable_PKR_BankAccountWF_Extension">
+      <SubType>Content</SubType>
+      <Name>BankAccountTable_PKR_BankAccountWF_Extension</Name>
+      <Link>Classes\BankAccountTable_PKR_BankAccountWF_Extension</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountApprWFEventHandler">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountApprWFEventHandler</Name>
+      <Link>Classes\PKR_BankAccountApprWFEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountApprWFResubmitActionMgr">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountApprWFResubmitActionMgr</Name>
+      <Link>Classes\PKR_BankAccountApprWFResubmitActionMgr</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountWFBase">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFBase</Name>
+      <Link>Classes\PKR_BankAccountWFBase</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountWFDocument">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFDocument</Name>
+      <Link>Classes\PKR_BankAccountWFDocument</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountWFEventHandler">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFEventHandler</Name>
+      <Link>Classes\PKR_BankAccountWFEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountWFReviewEventHandler">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFReviewEventHandler</Name>
+      <Link>Classes\PKR_BankAccountWFReviewEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountWFReviewResubmitActionMgr">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFReviewResubmitActionMgr</Name>
+      <Link>Classes\PKR_BankAccountWFReviewResubmitActionMgr</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountWFReviewStatusHandler">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFReviewStatusHandler</Name>
+      <Link>Classes\PKR_BankAccountWFReviewStatusHandler</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountWFStatusHandler">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFStatusHandler</Name>
+      <Link>Classes\PKR_BankAccountWFStatusHandler</Link>
+    </Content>
+    <Content Include="AxClass\PKR_BankAccountWFSubmitManager">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFSubmitManager</Name>
+      <Link>Classes\PKR_BankAccountWFSubmitManager</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_BankAccountReviewDate">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountReviewDate</Name>
+      <Link>EDT Dates\PKR_BankAccountReviewDate</Link>
+    </Content>
+    <Content Include="AxEnum\PKR_BankAccountReviewStatus">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountReviewStatus</Name>
+      <Link>Base Enums\PKR_BankAccountReviewStatus</Link>
+    </Content>
+    <Content Include="AxEnum\PKR_BankAccountWFApprStatus">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFApprStatus</Name>
+      <Link>Base Enums\PKR_BankAccountWFApprStatus</Link>
+    </Content>
+    <Content Include="AxFormExtension\BankAccountTable.PKR_BankAccountWF">
+      <SubType>Content</SubType>
+      <Name>BankAccountTable.PKR_BankAccountWF</Name>
+      <Link>Form Extensions\BankAccountTable.PKR_BankAccountWF</Link>
+    </Content>
+    <Content Include="AxLabelFile\PKR_BankAccountWF_en-US">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWF_en-US</Name>
+      <Link>LabelFiles\PKR_BankAccountWF_en-US</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountApprWFApprove">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountApprWFApprove</Name>
+      <Link>Action Menu Items\PKR_BankAccountApprWFApprove</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountApprWFDelegateMenuItem">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountApprWFDelegateMenuItem</Name>
+      <Link>Action Menu Items\PKR_BankAccountApprWFDelegateMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountApprWFReject">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountApprWFReject</Name>
+      <Link>Action Menu Items\PKR_BankAccountApprWFReject</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountApprWFRequestChange">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountApprWFRequestChange</Name>
+      <Link>Action Menu Items\PKR_BankAccountApprWFRequestChange</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountApprWFResubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountApprWFResubmitMenuItem</Name>
+      <Link>Action Menu Items\PKR_BankAccountApprWFResubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountWFCancelMenuItem">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFCancelMenuItem</Name>
+      <Link>Action Menu Items\PKR_BankAccountWFCancelMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountWFReviewComplete">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFReviewComplete</Name>
+      <Link>Action Menu Items\PKR_BankAccountWFReviewComplete</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountWFReviewDelegateMenuItem">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFReviewDelegateMenuItem</Name>
+      <Link>Action Menu Items\PKR_BankAccountWFReviewDelegateMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountWFReviewResubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFReviewResubmitMenuItem</Name>
+      <Link>Action Menu Items\PKR_BankAccountWFReviewResubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\PKR_BankAccountWFSubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFSubmitMenuItem</Name>
+      <Link>Action Menu Items\PKR_BankAccountWFSubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxQuery\PKR_BankAccountTable">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountTable</Name>
+      <Link>Queries\PKR_BankAccountTable</Link>
+    </Content>
+    <Content Include="AxTableExtension\BankAccountTable.PKR_BankAccountWF">
+      <SubType>Content</SubType>
+      <Name>BankAccountTable.PKR_BankAccountWF</Name>
+      <Link>Table Extensions\BankAccountTable.PKR_BankAccountWF</Link>
+    </Content>
+    <Content Include="AxWorkflowApproval\PKR_BankAccountApprWF">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountApprWF</Name>
+      <Link>Workflow Approvals\PKR_BankAccountApprWF</Link>
+    </Content>
+    <Content Include="AxWorkflowCategory\PKR_BankAccountCategory">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountCategory</Name>
+      <Link>WorkflowCategories\PKR_BankAccountCategory</Link>
+    </Content>
+    <Content Include="AxWorkflowTask\PKR_BankAccountWFReview">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWFReview</Name>
+      <Link>Workflow Tasks\PKR_BankAccountWFReview</Link>
+    </Content>
+    <Content Include="AxWorkflowTemplate\PKR_BankAccountWF">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWF</Name>
+      <Link>WorkflowTypes\PKR_BankAccountWF</Link>
+    </Content>
+    <Content Include="PKR_BankAccountWF.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>PKR_BankAccountWF.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\PKR_BankAccountWF_en-US</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Action Menu Items\" />
+    <Folder Include="Base Enums\" />
+    <Folder Include="EDT Dates\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="LabelFiles" />
+    <Folder Include="Table Extensions\" />
+    <Folder Include="Workflow Approvals\" />
+    <Folder Include="Workflow Tasks\" />
+    <Folder Include="WorkflowTypes" />
+    <Folder Include="WorkflowCategories" />
+    <Folder Include="Queries" />
+    <Folder Include="Classes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PKR_Model</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{91495b1b-a30f-42a6-9bbd-bad35d8cbb6e}</ProjectGuid>
+    <Name>PKR_InventTrans</Name>
+    <RootNamespace>PKR_InventTrans</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes" />
+    <Folder Include="Menus" />
+    <Folder Include="MenuItemOutput" />
+    <Folder Include="Reports" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\PKR_InventTransContract">
+      <SubType>Content</SubType>
+      <Name>PKR_InventTransContract</Name>
+      <Link>Classes\PKR_InventTransContract</Link>
+    </Content>
+    <Content Include="AxClass\PKR_InventTransDP">
+      <SubType>Content</SubType>
+      <Name>PKR_InventTransDP</Name>
+      <Link>Classes\PKR_InventTransDP</Link>
+    </Content>
+    <Content Include="AxMenuExtension\InventoryManagement.PKR_Model">
+      <SubType>Content</SubType>
+      <Name>InventoryManagement.PKR_Model</Name>
+      <Link>Menus\InventoryManagement.PKR_Model</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\PKR_InventTrans">
+      <SubType>Content</SubType>
+      <Name>PKR_InventTrans</Name>
+      <Link>MenuItemOutput\PKR_InventTrans</Link>
+    </Content>
+    <Content Include="AxReport\PKR_InventTrans">
+      <SubType>Content</SubType>
+      <Name>PKR_InventTrans</Name>
+      <Link>Reports\PKR_InventTrans</Link>
+    </Content>
+    <Content Include="AxTable\PKR_InventTransTmp">
+      <SubType>Content</SubType>
+      <Name>PKR_InventTransTmp</Name>
+      <Link>Tables\PKR_InventTransTmp</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
