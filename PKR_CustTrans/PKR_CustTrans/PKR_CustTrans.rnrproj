@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PKR_Model</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{02a77db5-42bc-4cfd-856d-5cc14db00502}</ProjectGuid>
+    <Name>PKR_CustTrans</Name>
+    <RootNamespace>PKR_CustTrans</RootNamespace>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Label Files\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\PKR_CustTransContract">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransContract</Name>
+      <Link>Classes\PKR_CustTransContract</Link>
+    </Content>
+    <Content Include="AxClass\PKR_CustTransController">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransController</Name>
+      <Link>Classes\PKR_CustTransController</Link>
+    </Content>
+    <Content Include="AxClass\PKR_CustTransDP">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransDP</Name>
+      <Link>Classes\PKR_CustTransDP</Link>
+    </Content>
+    <Content Include="AxClass\PKR_CustTransUIBuilder">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransUIBuilder</Name>
+      <Link>Classes\PKR_CustTransUIBuilder</Link>
+    </Content>
+    <Content Include="AxLabelFile\PKR_CustTransLabels_en-US">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransLabels_en-US</Name>
+      <Link>Label Files\PKR_CustTransLabels_en-US</Link>
+    </Content>
+    <Content Include="AxMenuExtension\AccountsReceivable.PKR_CustTrans">
+      <SubType>Content</SubType>
+      <Name>AccountsReceivable.PKR_CustTrans</Name>
+      <Link>Menu Extensions\AccountsReceivable.PKR_CustTrans</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\PKR_CustTrans">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTrans</Name>
+      <Link>Output Menu Items\PKR_CustTrans</Link>
+    </Content>
+    <Content Include="AxReport\PKR_CustTrans">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTrans</Name>
+      <Link>Reports\PKR_CustTrans</Link>
+    </Content>
+    <Content Include="AxTable\PKR_CustTransTmp">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransTmp</Name>
+      <Link>Tables\PKR_CustTransTmp</Link>
+    </Content>
+    <Content Include="PKR_CustTransLabels.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransLabels.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\PKR_CustTransLabels_en-US</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
