@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "PKR_SalesConfirmReport (USR) [PKR_Model]", "PKR_SalesConfirmReport\PKR_SalesConfirmReport.rnrproj", "{F3FB7BD9-7509-429A-ACB6-33E8CF495B69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3FB7BD9-7509-429A-ACB6-33E8CF495B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FB7BD9-7509-429A-ACB6-33E8CF495B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AC87297-53BB-4775-823B-E42D6C53BE32}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PKR_Model</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{b38b69a4-4d9d-40ba-b777-7f27120aeccf}</ProjectGuid>
+    <Name>PKR_Customers</Name>
+    <RootNamespace>PKR_Customers</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AxMenuExtension\AccountsReceivable.PKR_Model">
+      <SubType>Content</SubType>
+      <Name>AccountsReceivable.PKR_Model</Name>
+      <Link>Menus\AccountsReceivable.PKR_Model</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\PKR_Customers">
+      <SubType>Content</SubType>
+      <Name>PKR_Customers</Name>
+      <Link>OutputMenuItems\PKR_Customers</Link>
+    </Content>
+    <Content Include="AxQuery\PKR_Customers">
+      <SubType>Content</SubType>
+      <Name>PKR_Customers</Name>
+      <Link>Queries\PKR_Customers</Link>
+    </Content>
+    <Content Include="AxReport\PKR_Customers">
+      <SubType>Content</SubType>
+      <Name>PKR_Customers</Name>
+      <Link>Reports\PKR_Customers</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Menus" />
+    <Folder Include="Queries" />
+    <Folder Include="OutputMenuItems" />
+    <Folder Include="Reports" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

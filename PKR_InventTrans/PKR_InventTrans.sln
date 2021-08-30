@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "PKR_InventTrans (USR) [PKR_Model]", "PKR_InventTrans\PKR_InventTrans.rnrproj", "{91495B1B-A30F-42A6-9BBD-BAD35D8CBB6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91495B1B-A30F-42A6-9BBD-BAD35D8CBB6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91495B1B-A30F-42A6-9BBD-BAD35D8CBB6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F1DE33-DB77-4EDC-8DE8-CFA851498DD2}
+	EndGlobalSection
+EndGlobal
