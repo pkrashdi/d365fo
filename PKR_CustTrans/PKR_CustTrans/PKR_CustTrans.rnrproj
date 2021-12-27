@@ -32,7 +32,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Base Enums\" />
     <Folder Include="Classes\" />
+    <Folder Include="EDT Enums\" />
     <Folder Include="Label Files\" />
     <Folder Include="Menu Extensions\" />
     <Folder Include="Output Menu Items\" />
@@ -59,6 +61,16 @@
       <SubType>Content</SubType>
       <Name>PKR_CustTransUIBuilder</Name>
       <Link>Classes\PKR_CustTransUIBuilder</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_CustTransGroupByEdt">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransGroupByEdt</Name>
+      <Link>EDT Enums\PKR_CustTransGroupByEdt</Link>
+    </Content>
+    <Content Include="AxEnum\PKR_CustTransGroupBy">
+      <SubType>Content</SubType>
+      <Name>PKR_CustTransGroupBy</Name>
+      <Link>Base Enums\PKR_CustTransGroupBy</Link>
     </Content>
     <Content Include="AxLabelFile\PKR_CustTransLabels_en-US">
       <SubType>Content</SubType>

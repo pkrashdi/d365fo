@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PKR_Model</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{6ee35a6b-c119-4c7b-b980-ceb5f4482fdf}</ProjectGuid>
+    <Name>PKR_ResortManagement</Name>
+    <RootNamespace>PKR_DataStructures</RootNamespace>
+    <StartupType>Class</StartupType>
+    <StartupObject>PKR_ResortBookingTableForm</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Base Enums\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Composite Queries\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Dates\" />
+    <Folder Include="EDT Extensions\" />
+    <Folder Include="EDT Strings\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Label Files\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Menus\" />
+    <Folder Include="Simple Queries\" />
+    <Folder Include="Tables\" />
+    <Folder Include="Tiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\NumberSeqModule_PKR_Resort">
+      <SubType>Content</SubType>
+      <Name>NumberSeqModule_PKR_Resort</Name>
+      <Link>NumberSeqModule_PKR_Resort</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortBookingTableForm">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingTableForm</Name>
+      <Link>Classes\PKR_ResortBookingTableForm</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortBookingTableType">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingTableType</Name>
+      <Link>Classes\PKR_ResortBookingTableType</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortGroupFilterableI">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortGroupFilterableI</Name>
+      <Link>Classes\PKR_ResortGroupFilterableI</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortTableType">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableType</Name>
+      <Link>Classes\PKR_ResortTableType</Link>
+    </Content>
+    <Content Include="AxClass\PKR_Test">
+      <SubType>Content</SubType>
+      <Name>PKR_Test</Name>
+      <Link>Classes\PKR_Test</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_ResortAcquisitionDate">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortAcquisitionDate</Name>
+      <Link>EDT Dates\PKR_ResortAcquisitionDate</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_ResortBookingDateConfirmed">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingDateConfirmed</Name>
+      <Link>EDT Dates\PKR_ResortBookingDateConfirmed</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_ResortBookingDateRequested">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingDateRequested</Name>
+      <Link>EDT Dates\PKR_ResortBookingDateRequested</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_ResortBookingId">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingId</Name>
+      <Link>EDT Strings\PKR_ResortBookingId</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_ResortGroupID">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortGroupID</Name>
+      <Link>EDT Strings\PKR_ResortGroupID</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_ResortID">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortID</Name>
+      <Link>EDT Strings\PKR_ResortID</Link>
+    </Content>
+    <Content Include="AxEdt\PKR_ResortRegistryNum">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortRegistryNum</Name>
+      <Link>EDT Strings\PKR_ResortRegistryNum</Link>
+    </Content>
+    <Content Include="AxEnumExtension\NumberSeqModule.PKR_Resort">
+      <SubType>Content</SubType>
+      <Name>NumberSeqModule.PKR_Resort</Name>
+      <Link>NumberSeqModule.PKR_Resort</Link>
+    </Content>
+    <Content Include="AxEnum\PKR_ResortBookingStatus">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingStatus</Name>
+      <Link>Base Enums\PKR_ResortBookingStatus</Link>
+    </Content>
+    <Content Include="AxEnum\PKR_ResortTypeCostwise">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTypeCostwise</Name>
+      <Link>Base Enums\PKR_ResortTypeCostwise</Link>
+    </Content>
+    <Content Include="AxEnum\PKR_ResortTypeLocationwise">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTypeLocationwise</Name>
+      <Link>Base Enums\PKR_ResortTypeLocationwise</Link>
+    </Content>
+    <Content Include="AxForm\PKR_ResortBookingsOpenPart">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingsOpenPart</Name>
+      <Link>Forms\PKR_ResortBookingsOpenPart</Link>
+    </Content>
+    <Content Include="AxForm\PKR_ResortBookingTable">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingTable</Name>
+      <Link>Forms\PKR_ResortBookingTable</Link>
+    </Content>
+    <Content Include="AxForm\PKR_ResortGroup">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortGroup</Name>
+      <Link>Forms\PKR_ResortGroup</Link>
+    </Content>
+    <Content Include="AxForm\PKR_ResortParameters">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortParameters</Name>
+      <Link>Forms\PKR_ResortParameters</Link>
+    </Content>
+    <Content Include="AxForm\PKR_ResortTable">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTable</Name>
+      <Link>Forms\PKR_ResortTable</Link>
+    </Content>
+    <Content Include="AxForm\PKR_ResortWorkspace">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortWorkspace</Name>
+      <Link>Forms\PKR_ResortWorkspace</Link>
+    </Content>
+    <Content Include="AxLabelFile\PKR_FMS_Labels_en-US">
+      <SubType>Content</SubType>
+      <Name>PKR_FMS_Labels_en-US</Name>
+      <Link>Label Files\PKR_FMS_Labels_en-US</Link>
+    </Content>
+    <Content Include="AxMenuExtension\MainMenu.PKR_ResortManagement">
+      <SubType>Content</SubType>
+      <Name>MainMenu.PKR_ResortManagement</Name>
+      <Link>Menu Extensions\MainMenu.PKR_ResortManagement</Link>
+    </Content>
+    <Content Include="AxMenuExtension\navpanemenu.PKR_ResortManagement">
+      <SubType>Content</SubType>
+      <Name>navpanemenu.PKR_ResortManagement</Name>
+      <Link>Menu Extensions\navpanemenu.PKR_ResortManagement</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\PKR_ResortBookingOrderTable">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingOrderTable</Name>
+      <Link>Display Menu Items\PKR_ResortBookingOrderTable</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\PKR_ResortBookingsOpenPart">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingsOpenPart</Name>
+      <Link>Display Menu Items\PKR_ResortBookingsOpenPart</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\PKR_ResortGroup">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortGroup</Name>
+      <Link>Display Menu Items\PKR_ResortGroup</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\PKR_ResortManagementWorkspace">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortManagementWorkspace</Name>
+      <Link>Display Menu Items\PKR_ResortManagementWorkspace</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\PKR_ResortParameters">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortParameters</Name>
+      <Link>Display Menu Items\PKR_ResortParameters</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\PKR_ResortTable">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTable</Name>
+      <Link>Display Menu Items\PKR_ResortTable</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\PKR_ResortTableEconomy">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableEconomy</Name>
+      <Link>Display Menu Items\PKR_ResortTableEconomy</Link>
+    </Content>
+    <Content Include="AxMenu\PKR_ResortManagement">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortManagement</Name>
+      <Link>Menus\PKR_ResortManagement</Link>
+    </Content>
+    <Content Include="AxQuery\PKR_ResortTableAll">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableAll</Name>
+      <Link>Simple Queries\PKR_ResortTableAll</Link>
+    </Content>
+    <Content Include="AxQuery\PKR_ResortTableEconomy">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableEconomy</Name>
+      <Link>Composite Queries\PKR_ResortTableEconomy</Link>
+    </Content>
+    <Content Include="AxTable\PKR_ResortBookingLine">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingLine</Name>
+      <Link>Tables\PKR_ResortBookingLine</Link>
+    </Content>
+    <Content Include="AxTable\PKR_ResortBookingTable">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortBookingTable</Name>
+      <Link>Tables\PKR_ResortBookingTable</Link>
+    </Content>
+    <Content Include="AxTable\PKR_ResortGroup">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortGroup</Name>
+      <Link>Tables\PKR_ResortGroup</Link>
+    </Content>
+    <Content Include="AxTable\PKR_ResortParameters">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortParameters</Name>
+      <Link>Tables\PKR_ResortParameters</Link>
+    </Content>
+    <Content Include="AxTable\PKR_ResortTable">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTable</Name>
+      <Link>Tables\PKR_ResortTable</Link>
+    </Content>
+    <Content Include="AxTile\PKR_ResortEconomy">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortEconomy</Name>
+      <Link>Tiles\PKR_ResortEconomy</Link>
+    </Content>
+    <Content Include="AxTile\PKR_ResortManagementWorkspaceTile">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortManagementWorkspaceTile</Name>
+      <Link>Tiles\PKR_ResortManagementWorkspaceTile</Link>
+    </Content>
+    <Content Include="AxTile\PKR_ResortTableAll">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableAll</Name>
+      <Link>Tiles\PKR_ResortTableAll</Link>
+    </Content>
+    <Content Include="PKR_FMS_Labels.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>PKR_FMS_Labels.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\PKR_FMS_Labels_en-US</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

@@ -33,12 +33,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Table Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AxClass\PrintMgmtDocType_PKR_SalesConfirmReport_Handler">
       <SubType>Content</SubType>
       <Name>PrintMgmtDocType_PKR_SalesConfirmReport_Handler</Name>
       <Link>Classes\PrintMgmtDocType_PKR_SalesConfirmReport_Handler</Link>
+    </Content>
+    <Content Include="AxReport\PKR_SalesConfirm">
+      <SubType>Content</SubType>
+      <Name>PKR_SalesConfirm</Name>
+      <Link>Reports\PKR_SalesConfirm</Link>
+    </Content>
+    <Content Include="AxTableExtension\SalesConfirmDetailsTmp.PKR_Model">
+      <SubType>Content</SubType>
+      <Name>SalesConfirmDetailsTmp.PKR_Model</Name>
+      <Link>Table Extensions\SalesConfirmDetailsTmp.PKR_Model</Link>
+    </Content>
+    <Content Include="AxTableExtension\SalesConfirmHeaderTmp.PKR_Model">
+      <SubType>Content</SubType>
+      <Name>SalesConfirmHeaderTmp.PKR_Model</Name>
+      <Link>Table Extensions\SalesConfirmHeaderTmp.PKR_Model</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
