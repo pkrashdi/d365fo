@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="66c1daf8-82d5-471f-83ff-4cc1b8ac88e4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="pkr_resortservices.xsd" MetadataType="Schema" ID="51ebbeb5-34df-4030-a862-deb28cbb3d30" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd1" />
+    <MetadataFile FileName="pkr_resortservices1.xsd" MetadataType="Schema" ID="008a9976-12f4-4514-afe3-940f48779a69" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd3" />
+    <MetadataFile FileName="pkr_resortservices.wsdl" MetadataType="Wsdl" ID="5a88f299-cbc3-4b42-ac51-4daed66bfc75" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?wsdl" />
+    <MetadataFile FileName="pkr_resortservices2.xsd" MetadataType="Schema" ID="c602ca9d-65e4-42de-88eb-f8bfbe10642e" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd5" />
+    <MetadataFile FileName="pkr_resortservices3.xsd" MetadataType="Schema" ID="45d209e5-81ec-49d2-a8c0-be889bd74683" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd0" />
+    <MetadataFile FileName="pkr_resortservices4.xsd" MetadataType="Schema" ID="4735a4a2-a79f-468b-8d33-36b508fcfa8b" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd2" />
+    <MetadataFile FileName="pkr_resortservices.disco" MetadataType="Disco" ID="e16f1c3b-81e4-4a39-aa88-e33d381f36ee" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?disco" />
+    <MetadataFile FileName="pkr_resortservices5.xsd" MetadataType="Schema" ID="5c16b10c-4b64-4c98-91b4-7b9e6ba028da" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd4" />
+    <MetadataFile FileName="pkr_resortservices6.xsd" MetadataType="Schema" ID="89b64e35-f8a4-4b0e-800b-0b49645e4729" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd6" />
+    <MetadataFile FileName="pkr_resortservices1.wsdl" MetadataType="Wsdl" ID="a1175dec-224b-496d-89c9-bfd9379d8d52" SourceId="1" SourceUrl="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

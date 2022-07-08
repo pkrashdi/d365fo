@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\PKR_ResortServiceTest.exe.config
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\PKR_ResortServiceTest.exe
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\PKR_ResortServiceTest.pdb
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\System.Net.Http.dll
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\obj\Debug\PKR_ResortServiceTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\obj\Debug\PKR_ResortServiceTest.csproj.CopyComplete
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\obj\Debug\PKR_ResortServiceTest.exe
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\obj\Debug\PKR_ResortServiceTest.pdb
+C:\Users\Administrator\source\repos\d365fo\PKR_DataStructures\PKR_ResortServiceTest\obj\Debug\PKR_ResortServiceTest.csproj.AssemblyReference.cache

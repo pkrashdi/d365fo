@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.contoso.com/PKR_ResortMS" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.contoso.com/PKR_ResortMS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.contoso.com/PKR_ResortMS/Imports">
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd2" namespace="http://schemas.contoso.com/PKR_ResortMS" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+      <xsd:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.AX.KernelInterop" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getResorts">
+    <wsdl:part name="parameters" element="tns:getResorts" />
+  </wsdl:message>
+  <wsdl:message name="getResorts_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="getResortsResponse">
+    <wsdl:part name="parameters" element="tns:getResortsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getResortsResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ResortServices_getResorts_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="changeResortGroup">
+    <wsdl:part name="parameters" element="tns:changeResortGroup" />
+  </wsdl:message>
+  <wsdl:message name="changeResortGroup_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="changeResortGroupResponse">
+    <wsdl:part name="parameters" element="tns:changeResortGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="changeResortGroupResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="ResortServices_changeResortGroup_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="ResortServices">
+    <wsdl:operation name="getResorts">
+      <wsdl:input wsam:Action="http://schemas.contoso.com/PKR_ResortMS/ResortServices/getResorts" name="getResorts" message="tns:getResorts" />
+      <wsdl:output wsam:Action="http://schemas.contoso.com/PKR_ResortMS/ResortServices/getResortsResponse" name="getResortsResponse" message="tns:getResortsResponse" />
+      <wsdl:fault wsam:Action="http://schemas.contoso.com/PKR_ResortMS/ResortServices/Fault" name="SoapServiceFaultFault" message="tns:ResortServices_getResorts_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="changeResortGroup">
+      <wsdl:input wsam:Action="http://schemas.contoso.com/PKR_ResortMS/ResortServices/changeResortGroup" name="changeResortGroup" message="tns:changeResortGroup" />
+      <wsdl:output wsam:Action="http://schemas.contoso.com/PKR_ResortMS/ResortServices/changeResortGroupResponse" name="changeResortGroupResponse" message="tns:changeResortGroupResponse" />
+      <wsdl:fault wsam:Action="http://schemas.contoso.com/PKR_ResortMS/ResortServices/Fault" name="SoapServiceFaultFault" message="tns:ResortServices_changeResortGroup_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

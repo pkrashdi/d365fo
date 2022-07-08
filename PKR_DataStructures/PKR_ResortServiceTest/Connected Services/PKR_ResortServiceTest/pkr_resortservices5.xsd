@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" />
+  <xs:import schemaLocation="https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/pkr_resortservices?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfPKR_ResortTableContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PKR_ResortTableContract" nillable="true" type="tns:PKR_ResortTableContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPKR_ResortTableContract" nillable="true" type="tns:ArrayOfPKR_ResortTableContract" />
+  <xs:complexType name="PKR_ResortTableContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q1:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmAcquisitionDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="parmRegistryNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResortGroupId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResortId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResortName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResortTypeCostwise" type="tns:PKR_ResortTypeCostwise" />
+          <xs:element minOccurs="0" name="parmResortTypeLocationwise" type="tns:PKR_ResortTypeLocationwise" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PKR_ResortTableContract" nillable="true" type="tns:PKR_ResortTableContract" />
+  <xs:simpleType name="PKR_ResortTypeCostwise">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Economy" />
+      <xs:enumeration value="Luxury" />
+      <xs:enumeration value="SuperLuxury" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PKR_ResortTypeCostwise" nillable="true" type="tns:PKR_ResortTypeCostwise" />
+  <xs:simpleType name="PKR_ResortTypeLocationwise">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:element name="PKR_ResortTypeLocationwise" nillable="true" type="tns:PKR_ResortTypeLocationwise" />
+  <xs:complexType name="PKR_ResortResortGroupChangeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SysOperationDataContractBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" minOccurs="0" name="parmHideResortId" type="q2:NoYes" />
+          <xs:element minOccurs="0" name="parmResortGroupID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="parmResortID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PKR_ResortResortGroupChangeContract" nillable="true" type="tns:PKR_ResortResortGroupChangeContract" />
+  <xs:complexType name="SysOperationDataContractBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q3:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="parmCallId" type="ser:guid" />
+          <xs:element minOccurs="0" name="parmSessionIdx" type="xs:int" />
+          <xs:element minOccurs="0" name="parmSessionLoginDateTime" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SysOperationDataContractBase" nillable="true" type="tns:SysOperationDataContractBase" />
+  <xs:complexType name="PKR_ResortMessageContract">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Ax.Xpp" base="q4:XppObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="success" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PKR_ResortMessageContract" nillable="true" type="tns:PKR_ResortMessageContract" />
+</xs:schema>

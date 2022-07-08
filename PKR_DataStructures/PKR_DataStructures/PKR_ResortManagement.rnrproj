@@ -19,7 +19,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
-    <DBSyncInBuild>False</DBSyncInBuild>
+    <DBSyncInBuild>True</DBSyncInBuild>
     <GenerateFormAdaptors>False</GenerateFormAdaptors>
     <Company>
     </Company>
@@ -36,14 +36,18 @@
     <Folder Include="Base Enums\" />
     <Folder Include="Classes\" />
     <Folder Include="Composite Queries\" />
-    <Folder Include="Display Menu Items\" />
+    <Folder Include="Data Entities\" />
+    <Folder Include="Menu Items Display" />
     <Folder Include="EDT Dates\" />
-    <Folder Include="EDT Extensions\" />
     <Folder Include="EDT Strings\" />
     <Folder Include="Forms\" />
     <Folder Include="Label Files\" />
     <Folder Include="Menu Extensions\" />
     <Folder Include="Menus\" />
+    <Folder Include="Menu Items Action" />
+    <Folder Include="Security Privileges\" />
+    <Folder Include="ServiceGroups" />
+    <Folder Include="Services" />
     <Folder Include="Simple Queries\" />
     <Folder Include="Tables\" />
     <Folder Include="Tiles\" />
@@ -52,7 +56,7 @@
     <Content Include="AxClass\NumberSeqModule_PKR_Resort">
       <SubType>Content</SubType>
       <Name>NumberSeqModule_PKR_Resort</Name>
-      <Link>NumberSeqModule_PKR_Resort</Link>
+      <Link>Classes\NumberSeqModule_PKR_Resort</Link>
     </Content>
     <Content Include="AxClass\PKR_ResortBookingTableForm">
       <SubType>Content</SubType>
@@ -69,6 +73,41 @@
       <Name>PKR_ResortGroupFilterableI</Name>
       <Link>Classes\PKR_ResortGroupFilterableI</Link>
     </Content>
+    <Content Include="AxClass\PKR_ResortMessageContract">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortMessageContract</Name>
+      <Link>Classes\PKR_ResortMessageContract</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortResortGroupChange">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortResortGroupChange</Name>
+      <Link>Classes\PKR_ResortResortGroupChange</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortResortGroupChangeContract">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortResortGroupChangeContract</Name>
+      <Link>Classes\PKR_ResortResortGroupChangeContract</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortResortGroupChangeController">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortResortGroupChangeController</Name>
+      <Link>Classes\PKR_ResortResortGroupChangeController</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortResortGroupChangeUIBuilder">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortResortGroupChangeUIBuilder</Name>
+      <Link>Classes\PKR_ResortResortGroupChangeUIBuilder</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortServices">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortServices</Name>
+      <Link>Classes\PKR_ResortServices</Link>
+    </Content>
+    <Content Include="AxClass\PKR_ResortTableContract">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableContract</Name>
+      <Link>Classes\PKR_ResortTableContract</Link>
+    </Content>
     <Content Include="AxClass\PKR_ResortTableType">
       <SubType>Content</SubType>
       <Name>PKR_ResortTableType</Name>
@@ -78,6 +117,11 @@
       <SubType>Content</SubType>
       <Name>PKR_Test</Name>
       <Link>Classes\PKR_Test</Link>
+    </Content>
+    <Content Include="AxDataEntityView\PKR_ResortTableEntity">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableEntity</Name>
+      <Link>Data Entities\PKR_ResortTableEntity</Link>
     </Content>
     <Content Include="AxEdt\PKR_ResortAcquisitionDate">
       <SubType>Content</SubType>
@@ -117,7 +161,7 @@
     <Content Include="AxEnumExtension\NumberSeqModule.PKR_Resort">
       <SubType>Content</SubType>
       <Name>NumberSeqModule.PKR_Resort</Name>
-      <Link>NumberSeqModule.PKR_Resort</Link>
+      <Link>Base Enums\NumberSeqModule.PKR_Resort</Link>
     </Content>
     <Content Include="AxEnum\PKR_ResortBookingStatus">
       <SubType>Content</SubType>
@@ -179,40 +223,45 @@
       <Name>navpanemenu.PKR_ResortManagement</Name>
       <Link>Menu Extensions\navpanemenu.PKR_ResortManagement</Link>
     </Content>
+    <Content Include="AxMenuItemAction\PKR_ResortResortGroupChangeController">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortResortGroupChangeController</Name>
+      <Link>Menu Items Action\PKR_ResortResortGroupChangeController</Link>
+    </Content>
     <Content Include="AxMenuItemDisplay\PKR_ResortBookingOrderTable">
       <SubType>Content</SubType>
       <Name>PKR_ResortBookingOrderTable</Name>
-      <Link>Display Menu Items\PKR_ResortBookingOrderTable</Link>
+      <Link>Menu Items Display\PKR_ResortBookingOrderTable</Link>
     </Content>
     <Content Include="AxMenuItemDisplay\PKR_ResortBookingsOpenPart">
       <SubType>Content</SubType>
       <Name>PKR_ResortBookingsOpenPart</Name>
-      <Link>Display Menu Items\PKR_ResortBookingsOpenPart</Link>
+      <Link>Menu Items Display\PKR_ResortBookingsOpenPart</Link>
     </Content>
     <Content Include="AxMenuItemDisplay\PKR_ResortGroup">
       <SubType>Content</SubType>
       <Name>PKR_ResortGroup</Name>
-      <Link>Display Menu Items\PKR_ResortGroup</Link>
+      <Link>Menu Items Display\PKR_ResortGroup</Link>
     </Content>
     <Content Include="AxMenuItemDisplay\PKR_ResortManagementWorkspace">
       <SubType>Content</SubType>
       <Name>PKR_ResortManagementWorkspace</Name>
-      <Link>Display Menu Items\PKR_ResortManagementWorkspace</Link>
+      <Link>Menu Items Display\PKR_ResortManagementWorkspace</Link>
     </Content>
     <Content Include="AxMenuItemDisplay\PKR_ResortParameters">
       <SubType>Content</SubType>
       <Name>PKR_ResortParameters</Name>
-      <Link>Display Menu Items\PKR_ResortParameters</Link>
+      <Link>Menu Items Display\PKR_ResortParameters</Link>
     </Content>
     <Content Include="AxMenuItemDisplay\PKR_ResortTable">
       <SubType>Content</SubType>
       <Name>PKR_ResortTable</Name>
-      <Link>Display Menu Items\PKR_ResortTable</Link>
+      <Link>Menu Items Display\PKR_ResortTable</Link>
     </Content>
     <Content Include="AxMenuItemDisplay\PKR_ResortTableEconomy">
       <SubType>Content</SubType>
       <Name>PKR_ResortTableEconomy</Name>
-      <Link>Display Menu Items\PKR_ResortTableEconomy</Link>
+      <Link>Menu Items Display\PKR_ResortTableEconomy</Link>
     </Content>
     <Content Include="AxMenu\PKR_ResortManagement">
       <SubType>Content</SubType>
@@ -228,6 +277,26 @@
       <SubType>Content</SubType>
       <Name>PKR_ResortTableEconomy</Name>
       <Link>Composite Queries\PKR_ResortTableEconomy</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\PKR_ResortTableEntityMaintain">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableEntityMaintain</Name>
+      <Link>Security Privileges\PKR_ResortTableEntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\PKR_ResortTableEntityView">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableEntityView</Name>
+      <Link>Security Privileges\PKR_ResortTableEntityView</Link>
+    </Content>
+    <Content Include="AxServiceGroup\PKR_ResortServices">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortServices</Name>
+      <Link>ServiceGroups\PKR_ResortServices</Link>
+    </Content>
+    <Content Include="AxService\PKR_ResortServices">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortServices</Name>
+      <Link>Services\PKR_ResortServices</Link>
     </Content>
     <Content Include="AxTable\PKR_ResortBookingLine">
       <SubType>Content</SubType>
@@ -253,6 +322,11 @@
       <SubType>Content</SubType>
       <Name>PKR_ResortTable</Name>
       <Link>Tables\PKR_ResortTable</Link>
+    </Content>
+    <Content Include="AxTable\PKR_ResortTableStaging">
+      <SubType>Content</SubType>
+      <Name>PKR_ResortTableStaging</Name>
+      <Link>Tables\PKR_ResortTableStaging</Link>
     </Content>
     <Content Include="AxTile\PKR_ResortEconomy">
       <SubType>Content</SubType>
